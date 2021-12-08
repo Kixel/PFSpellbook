@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PFSpellbook", "PFSpellbook\PFSpellbook.pyproj", "{EAB7E16E-367D-495E-AC49-856AA24C09F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAB7E16E-367D-495E-AC49-856AA24C09F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAB7E16E-367D-495E-AC49-856AA24C09F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8B96310-B1F9-4114-92DF-34D4088AEE5A}
+	EndGlobalSection
+EndGlobal
