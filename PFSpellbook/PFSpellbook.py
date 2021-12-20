@@ -3,7 +3,8 @@
 import argparse
 import jinja2
 import os
-import glob
+import loader
+
 
 indir = "./in"
 outdir = "./out"
@@ -38,7 +39,7 @@ def parseArgs() -> argparse.Namespace:
     ap = argparse.ArgumentParser(prog="Pathfinder Spellbook Generator")
     ap.add_argument("-i", "--interactive", action="store_true", help="Starts PFSpells in interactive mode")
     
-    ap.add_argument("-r", "--rip", action="store", choices=choicesforR, help="Rips data from the specified source before doing anything else. If not specified, will use available data, or exit if nothing is found.")
+    ap.add_argument("-r", "--rip", action="store", choices=choicesforR, nargs="?", help="Rips data from the specified source before doing anything else. If not specified, will use available data, or exit if nothing is found.")
     ap.add_argument("-s", "--storedata", action="store_true", help="Stores ripped data for later use.")
     ap.add_argument("-m", "--mergerip", action="store", nargs="?", help="Will append and replace old data, not completely remove old data and rewrite it")
     ap.add_argument("-c", "--cachelocation", action="store", help="Change the location of the data cache")
@@ -64,7 +65,7 @@ def updateEnv():
         outdir = ""
         
 def phaseRip(args):
-    pass
+    l = loader.AnyLoader.getLoader("-")
 
 def phaseBuild(args):
     pass
