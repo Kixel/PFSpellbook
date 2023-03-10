@@ -12,6 +12,15 @@
             "console": "integratedTerminal",
             "cwd": "${fileDirname}",
             "args": ["-h"]
+        },
+        {
+            "name": "rip AON",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/PFSpellbook/PFSpellbook.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/PFSpellbook/",
+            "args": ["-r", "aon", "-s"]
         }
     ]
 }
